@@ -1,7 +1,3 @@
-%define	ruby_rubylibdir	%(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
-%define	ruby_archdir	%(ruby -r rbconfig -e 'print Config::CONFIG["archdir"]')
-%define	ruby_ridir	%(ruby -r rbconfig -e 'include Config; print File.join(CONFIG["datadir"], "ri", CONFIG["ruby_version"], "system")')
-%define	ruby_version	%(ruby -r rbconfig -e 'print Config::CONFIG["ruby_version"]')
 Summary:	Simple transactions module for Ruby
 Summary(pl):	Prosty modu³ transakcji dla jêzyka Ruby
 Name:		ruby-transaction-simple
@@ -13,6 +9,7 @@ Source0:	http://rubyforge.org/frs/download.php/4332/transaction-simple-%{version
 # Source0-md5:	c10b1f4d320cf8cb8bb6fdf10531141e
 Source1:	setup.rb
 URL:		http://halostatue.ca/
+BuildRequires:	rpmbuild(macros) >= 1.263
 BuildRequires:	ruby
 BuildRequires:	ruby-devel
 Requires:	ruby
@@ -33,9 +30,9 @@ instancji IO czy obiektów singleton).
 
 %prep
 %setup -q -n transaction-simple-%{version}
+cp %{SOURCE1} .
 
 %build
-cp %{SOURCE1} .
 ruby setup.rb config \
 	--siterubyver=%{ruby_rubylibdir}
 ruby setup.rb setup
