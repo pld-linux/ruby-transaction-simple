@@ -9,9 +9,9 @@ Source0:	http://rubyforge.org/frs/download.php/4332/transaction-simple-%{version
 # Source0-md5:	c10b1f4d320cf8cb8bb6fdf10531141e
 Source1:	setup.rb
 URL:		http://halostatue.ca/
-BuildRequires:	rpmbuild(macros) >= 1.263
+BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-devel
-Requires:	ruby-modules
+%ruby_mod_ver_requires_eq
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
