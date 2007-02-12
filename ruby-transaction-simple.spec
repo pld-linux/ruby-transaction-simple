@@ -1,5 +1,5 @@
 Summary:	Simple transactions module for Ruby
-Summary(pl):	Prosty modu³ transakcji dla jêzyka Ruby
+Summary(pl.UTF-8):   Prosty moduÅ‚ transakcji dla jÄ™zyka Ruby
 Name:		ruby-transaction-simple
 Version:	1.3.0
 Release:	2
@@ -20,12 +20,12 @@ support to objects. The transaction methods added by this module will
 work with most objects, excluding those that cannot be Marshaled
 (bindings, procedure objects, IO instances, or singleton objects).
 
-%description -l pl
-Transaction::Simple udostêpnia ogóln± metodê dodaj±c± obs³ugê
+%description -l pl.UTF-8
+Transaction::Simple udostÄ™pnia ogÃ³lnÄ… metodÄ™ dodajÄ…cÄ… obsÅ‚ugÄ™
 transakcji aktywnych do obiektu. Metody transakcyjne dodane przez ten
-modu³ bêd± dzia³aæ z wiêkszo¶ci± obiektów z wyj±tkiem tych, na których
-nie mo¿na wykonaæ operacji Marshal (dowi±zañ, obiektów procedur,
-instancji IO czy obiektów singleton).
+moduÅ‚ bÄ™dÄ… dziaÅ‚aÄ‡ z wiÄ™kszoÅ›ciÄ… obiektÃ³w z wyjÄ…tkiem tych, na ktÃ³rych
+nie moÅ¼na wykonaÄ‡ operacji Marshal (dowiÄ…zaÅ„, obiektÃ³w procedur,
+instancji IO czy obiektÃ³w singleton).
 
 %prep
 %setup -q -n transaction-simple-%{version}
