@@ -1,5 +1,5 @@
 Summary:	Simple transactions module for Ruby
-Summary(pl.UTF-8):   Prosty moduł transakcji dla języka Ruby
+Summary(pl.UTF-8):	Prosty moduł transakcji dla języka Ruby
 Name:		ruby-transaction-simple
 Version:	1.3.0
 Release:	2
