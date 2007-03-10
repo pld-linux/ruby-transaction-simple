@@ -1,12 +1,12 @@
 Summary:	Simple transactions module for Ruby
 Summary(pl.UTF-8):	Prosty moduł transakcji dla języka Ruby
 Name:		ruby-transaction-simple
-Version:	1.3.0
-Release:	2
+Version:	1.4.0
+Release:	1
 License:	Ruby License
 Group:		Development/Languages
-Source0:	http://rubyforge.org/frs/download.php/4332/transaction-simple-%{version}.tar.gz
-# Source0-md5:	c10b1f4d320cf8cb8bb6fdf10531141e
+Source0:	http://rubyforge.org/frs/download.php/17141/transaction-simple-%{version}.tar.gz
+# Source0-md5:	8067408775c3dca45831e7cc15f763bb
 Source1:	setup.rb
 URL:		http://halostatue.ca/
 BuildRequires:	rpmbuild(macros) >= 1.277
